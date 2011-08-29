@@ -23,15 +23,15 @@
 }
 
 - (void)loadView {
-	self.agController = [[AugmentedRealityController alloc] initWithViewController:self];
-	
-	self.agController.debugMode = NO;
-	self.agController.scaleViewsBasedOnDistance = YES;
-	self.agController.minimumScaleFactor = 0.5;
-	self.agController.rotateViewsBasedOnPerspective = YES;
-	
+    
+    self.agController = [[AugmentedRealityController alloc] initWithViewController:self];
+    self.agController.debugMode = NO;
+    self.agController.scaleViewsBasedOnDistance = YES;
+    self.agController.minimumScaleFactor = 0.5;
+    self.agController.rotateViewsBasedOnPerspective = YES;
+        
 	if ([dataSource.locations count] > 0) {
-		for (ARCoordinate *coordinate in dataSource.locations) {
+        for (ARCoordinate *coordinate in dataSource.locations) {
             UIView *coordinateView = [dataSource viewForCoordinate:coordinate];
 			[agController addCoordinate:coordinate augmentedView:coordinateView animated:NO];
 		}

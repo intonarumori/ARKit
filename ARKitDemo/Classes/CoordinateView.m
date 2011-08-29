@@ -23,8 +23,9 @@
 	
 		UILabel *titleLabel	= [[UILabel alloc] initWithFrame:CGRectMake(0, 0, BOX_WIDTH, 20.0)];
 		
-		[titleLabel setBackgroundColor: [UIColor colorWithWhite:.3 alpha:.8]];
-		[titleLabel setTextColor:		[UIColor whiteColor]];
+		[titleLabel setBackgroundColor: [UIColor orangeColor]];
+        [titleLabel setAlpha:(0.7)];
+		[titleLabel setTextColor:		[UIColor blackColor]];
 		[titleLabel setTextAlignment:	UITextAlignmentCenter];
 		[titleLabel setText:			[coordinate title]];
 		[titleLabel sizeToFit];
@@ -39,6 +40,7 @@
 		[self setBackgroundColor:[UIColor clearColor]];
 		[titleLabel release];
 		[pointView release];
+        
 	}
 	
     return self;

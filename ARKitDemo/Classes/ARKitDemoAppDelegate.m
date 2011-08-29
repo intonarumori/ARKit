@@ -33,6 +33,7 @@
 	}
 	
     [window makeKeyAndVisible];
+    
 }
 
 - (void)dealloc {
@@ -46,11 +47,6 @@
 	NSMutableArray *locationArray = [[[NSMutableArray alloc] init] autorelease];
 	ARGeoCoordinate *tempCoordinate;
 	CLLocation		*tempLocation;
-	
-	tempLocation = [[CLLocation alloc] initWithLatitude:39.550051 longitude:-105.782067];
-	tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation locationTitle:@"Denver"];
-	[locationArray addObject:tempCoordinate];
-	[tempLocation release];
 	
 	tempLocation = [[CLLocation alloc] initWithLatitude:45.523875 longitude:-122.670399];
 	tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation locationTitle:@"Portland"];

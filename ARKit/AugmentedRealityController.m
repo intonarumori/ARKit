@@ -37,13 +37,12 @@
 #pragma mark - Init & dealloc 
 
 - (id)initWithViewController:(UIViewController *)vc {
-	coordinates		= [[NSMutableArray alloc] init];
-	coordinateViews	= [[NSMutableArray alloc] init];
-	latestHeading	= -1.0f;
-	debugView		= nil;
 	
+    coordinates		= [[NSMutableArray alloc] init];
+	self.coordinateViews	= [[NSMutableArray alloc] init];
+	self.latestHeading	= -1.0f;
+	self.debugView		= nil;	
 	self.rootViewController = vc; 
-
 	self.debugMode = NO; 
 	self.maximumScaleDistance = 0.0;
 	self.minimumScaleFactor = 1.0;
@@ -63,7 +62,7 @@
 	self.cameraController.sourceType = UIImagePickerControllerSourceTypeCamera;
 	self.cameraController.cameraViewTransform = CGAffineTransformScale(self.cameraController.cameraViewTransform, 1.13f,  1.13f);
 	self.cameraController.showsCameraControls = NO;
-	self.cameraController.navigationBarHidden =YES;
+	self.cameraController.navigationBarHidden = YES;
 	self.cameraController.cameraOverlayView = self.displayView;
 	
 	CLLocation *newCenter = [[CLLocation alloc] initWithLatitude:0.0 longitude:0.0];
@@ -80,7 +79,7 @@
 
 - (void)dealloc {
 	[[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
-
+    
 	self.locationManager = nil;
 	self.coordinateViews = nil;
 	self.debugView = nil;
@@ -91,8 +90,17 @@
 
 // This is needed to start showing the Camera of the Augemented Reality Toolkit.
 - (void)displayAR {
-	[rootViewController presentModalViewController:self.cameraController animated:NO];
-	displayView.frame = self.cameraController.view.bounds; 
+    @try {
+        [rootViewController presentModalViewController:self.cameraController animated:NO];
+        displayView.frame = self.cameraController.view.bounds; 
+    }
+    @catch (NSException *exception) {
+        NSLog(@"displayAR exception: %@", exception);
+    }
+    @finally {
+        NSLog(@"No error");
+    }
+    	
 }
 
 - (void)startListening {
@@ -296,10 +304,12 @@
 	
 	[coordinates addObject:coordinate];
 	
-	if (coordinate.radialDistance > self.maximumScaleDistance) 
+	if (coordinate.radialDistance > self.maximumScaleDistance) {
 		self.maximumScaleDistance = coordinate.radialDistance;
-	
+	}
 	[coordinateViews addObject:agView];
+    
+    
 }
 
 - (void)removeCoordinate:(ARCoordinate *)coordinate {
