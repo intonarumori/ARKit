@@ -38,7 +38,7 @@
 
 - (id)initWithViewController:(UIViewController *)vc {
 	
-    self = [super self];
+    self = [super init];
     
     coordinates		= [[NSMutableArray alloc] init];
 	self.coordinateViews	= [[NSMutableArray alloc] init];
