@@ -38,6 +38,8 @@
 
 - (id)initWithViewController:(UIViewController *)vc {
 	
+    self = [super self];
+    
     coordinates		= [[NSMutableArray alloc] init];
 	self.coordinateViews	= [[NSMutableArray alloc] init];
 	self.latestHeading	= -1.0f;
@@ -107,7 +109,7 @@
 	
 	// start our heading readings and our accelerometer readings.
 	if (!self.locationManager) {
-		self.locationManager = [[CLLocationManager alloc] init];
+		self.locationManager = [[[CLLocationManager alloc] init] autorelease];
 		self.locationManager.headingFilter = kCLHeadingFilterNone;
 		self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 		[self.locationManager startUpdatingHeading];

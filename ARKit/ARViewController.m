@@ -24,7 +24,7 @@
 
 - (void)loadView {
     
-    self.agController = [[AugmentedRealityController alloc] initWithViewController:self];
+    self.agController = [[[AugmentedRealityController alloc] initWithViewController:self] autorelease];
     self.agController.debugMode = NO;
     self.agController.scaleViewsBasedOnDistance = YES;
     self.agController.minimumScaleFactor = 0.5;
