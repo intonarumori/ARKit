@@ -12,10 +12,13 @@
 @class AugmentedRealityController;
 @protocol ARLocationDataSource;
 
-@interface ARViewController : UIViewController {
+@interface ARViewController : UIViewController
+{
 	AugmentedRealityController	*agController;
 	id<ARLocationDataSource> dataSource;
 }
+
+@property (nonatomic, retain) UIImagePickerController *cameraController;
 
 @property (nonatomic, retain) AugmentedRealityController *agController;
 @property (nonatomic, assign) id<ARLocationDataSource> dataSource;

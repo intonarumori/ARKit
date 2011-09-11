@@ -12,7 +12,8 @@
 
 @class ARCoordinate;
 
-@interface AugmentedRealityController : NSObject <UIAccelerometerDelegate, CLLocationManagerDelegate> {
+@interface AugmentedRealityController : NSObject <UINavigationControllerDelegate, UIAccelerometerDelegate, UIImagePickerControllerDelegate, CLLocationManagerDelegate>
+{
 @private
 	NSMutableArray		*coordinates;
 }
@@ -36,7 +37,6 @@
 @property (nonatomic, retain) CLLocation              *centerLocation;
 @property (nonatomic, retain) UIView                  *displayView;
 @property (nonatomic, retain) UIViewController        *rootViewController;
-@property (nonatomic, retain) UIImagePickerController *cameraController;
 @property (nonatomic, assign) UIDeviceOrientation	  currentOrientation;
 
 @property (nonatomic, assign) BOOL    debugMode;
@@ -44,7 +44,6 @@
 
 
 - (id)initWithViewController:(UIViewController *)theView;
-- (void)displayAR;
 - (void)updateLocations;
 
 - (void)setupDebugPostion;

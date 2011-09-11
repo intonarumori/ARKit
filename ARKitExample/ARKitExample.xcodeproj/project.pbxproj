@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A568A0E9141CE0A900086B63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A568A0E8141CE0A900086B63 /* UIKit.framework */; };
+		A568A0EB141CE0A900086B63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A568A0EA141CE0A900086B63 /* Foundation.framework */; };
+		A568A0ED141CE0A900086B63 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A568A0EC141CE0A900086B63 /* CoreGraphics.framework */; };
+		A568A0F3141CE0A900086B63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A568A0F1141CE0A900086B63 /* InfoPlist.strings */; };
+		A568A0F5141CE0A900086B63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A568A0F4141CE0A900086B63 /* main.m */; };
+		A568A0F9141CE0A900086B63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A568A0F8141CE0A900086B63 /* AppDelegate.m */; };
+		A568A0FC141CE0A900086B63 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A568A0FB141CE0A900086B63 /* MapViewController.m */; };
+		A568A107141CE2AA00086B63 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A568A106141CE2AA00086B63 /* MainViewController.m */; };
+		A568A113141CE35800086B63 /* ARCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = A568A10A141CE35800086B63 /* ARCoordinate.m */; };
+		A568A114141CE35800086B63 /* ARGeoCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = A568A10C141CE35800086B63 /* ARGeoCoordinate.m */; };
+		A568A115141CE35800086B63 /* ARKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A568A10E141CE35800086B63 /* ARKit.m */; };
+		A568A116141CE35800086B63 /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A568A110141CE35800086B63 /* ARViewController.m */; };
+		A568A117141CE35800086B63 /* AugmentedRealityController.m in Sources */ = {isa = PBXBuildFile; fileRef = A568A112141CE35800086B63 /* AugmentedRealityController.m */; };
+		A568A119141CE39F00086B63 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A568A118141CE39F00086B63 /* CoreLocation.framework */; };
+		A568A11B141CE3C000086B63 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A568A11A141CE3BF00086B63 /* QuartzCore.framework */; };
+		A568A129141CEB9E00086B63 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = A568A125141CEB9E00086B63 /* camera.png */; };
+		A568A12A141CEB9E00086B63 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A568A126141CEB9E00086B63 /* camera@2x.png */; };
+		A568A12B141CEB9E00086B63 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A568A127141CEB9E00086B63 /* Icon.png */; };
+		A568A12C141CEB9E00086B63 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A568A128141CEB9E00086B63 /* Icon@2x.png */; };
+		A568A12E141CEC4300086B63 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A568A12D141CEC4300086B63 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A568A0E4141CE0A900086B63 /* ARKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A568A0E8141CE0A900086B63 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A568A0EA141CE0A900086B63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A568A0EC141CE0A900086B63 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A568A0F0141CE0A900086B63 /* ARKitExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARKitExample-Info.plist"; sourceTree = "<group>"; };
+		A568A0F2141CE0A900086B63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A568A0F4141CE0A900086B63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A568A0F6141CE0A900086B63 /* ARKitExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARKitExample-Prefix.pch"; sourceTree = "<group>"; };
+		A568A0F7141CE0A900086B63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A568A0F8141CE0A900086B63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A568A0FA141CE0A900086B63 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		A568A0FB141CE0A900086B63 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		A568A105141CE2AA00086B63 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A568A106141CE2AA00086B63 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A568A109141CE35800086B63 /* ARCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCoordinate.h; sourceTree = "<group>"; };
+		A568A10A141CE35800086B63 /* ARCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCoordinate.m; sourceTree = "<group>"; };
+		A568A10B141CE35800086B63 /* ARGeoCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGeoCoordinate.h; sourceTree = "<group>"; };
+		A568A10C141CE35800086B63 /* ARGeoCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGeoCoordinate.m; sourceTree = "<group>"; };
+		A568A10D141CE35800086B63 /* ARKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARKit.h; sourceTree = "<group>"; };
+		A568A10E141CE35800086B63 /* ARKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARKit.m; sourceTree = "<group>"; };
+		A568A10F141CE35800086B63 /* ARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
+		A568A110141CE35800086B63 /* ARViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
+		A568A111141CE35800086B63 /* AugmentedRealityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AugmentedRealityController.h; sourceTree = "<group>"; };
+		A568A112141CE35800086B63 /* AugmentedRealityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AugmentedRealityController.m; sourceTree = "<group>"; };
+		A568A118141CE39F00086B63 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A568A11A141CE3BF00086B63 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A568A125141CEB9E00086B63 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		A568A126141CEB9E00086B63 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
+		A568A127141CEB9E00086B63 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A568A128141CEB9E00086B63 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		A568A12D141CEC4300086B63 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A568A0E1141CE0A900086B63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A568A12E141CEC4300086B63 /* MapKit.framework in Frameworks */,
+				A568A11B141CE3C000086B63 /* QuartzCore.framework in Frameworks */,
+				A568A119141CE39F00086B63 /* CoreLocation.framework in Frameworks */,
+				A568A0E9141CE0A900086B63 /* UIKit.framework in Frameworks */,
+				A568A0EB141CE0A900086B63 /* Foundation.framework in Frameworks */,
+				A568A0ED141CE0A900086B63 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A568A0D9141CE0A700086B63 = {
+			isa = PBXGroup;
+			children = (
+				A568A0EE141CE0A900086B63 /* ARKitExample */,
+				A568A0E7141CE0A900086B63 /* Frameworks */,
+				A568A0E5141CE0A900086B63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A568A0E5141CE0A900086B63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A568A0E4141CE0A900086B63 /* ARKitExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A568A0E7141CE0A900086B63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A568A12D141CEC4300086B63 /* MapKit.framework */,
+				A568A11A141CE3BF00086B63 /* QuartzCore.framework */,
+				A568A118141CE39F00086B63 /* CoreLocation.framework */,
+				A568A0E8141CE0A900086B63 /* UIKit.framework */,
+				A568A0EA141CE0A900086B63 /* Foundation.framework */,
+				A568A0EC141CE0A900086B63 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A568A0EE141CE0A900086B63 /* ARKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				A568A108141CE35700086B63 /* ARKit */,
+				A568A0F7141CE0A900086B63 /* AppDelegate.h */,
+				A568A0F8141CE0A900086B63 /* AppDelegate.m */,
+				A568A0FA141CE0A900086B63 /* MapViewController.h */,
+				A568A0FB141CE0A900086B63 /* MapViewController.m */,
+				A568A105141CE2AA00086B63 /* MainViewController.h */,
+				A568A106141CE2AA00086B63 /* MainViewController.m */,
+				A568A0EF141CE0A900086B63 /* Supporting Files */,
+				A568A124141CEB9D00086B63 /* Resources */,
+			);
+			path = ARKitExample;
+			sourceTree = "<group>";
+		};
+		A568A0EF141CE0A900086B63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A568A0F0141CE0A900086B63 /* ARKitExample-Info.plist */,
+				A568A0F1141CE0A900086B63 /* InfoPlist.strings */,
+				A568A0F4141CE0A900086B63 /* main.m */,
+				A568A0F6141CE0A900086B63 /* ARKitExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A568A108141CE35700086B63 /* ARKit */ = {
+			isa = PBXGroup;
+			children = (
+				A568A109141CE35800086B63 /* ARCoordinate.h */,
+				A568A10A141CE35800086B63 /* ARCoordinate.m */,
+				A568A10B141CE35800086B63 /* ARGeoCoordinate.h */,
+				A568A10C141CE35800086B63 /* ARGeoCoordinate.m */,
+				A568A10D141CE35800086B63 /* ARKit.h */,
+				A568A10E141CE35800086B63 /* ARKit.m */,
+				A568A10F141CE35800086B63 /* ARViewController.h */,
+				A568A110141CE35800086B63 /* ARViewController.m */,
+				A568A111141CE35800086B63 /* AugmentedRealityController.h */,
+				A568A112141CE35800086B63 /* AugmentedRealityController.m */,
+			);
+			name = ARKit;
+			path = ../../ARKit;
+			sourceTree = "<group>";
+		};
+		A568A124141CEB9D00086B63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A568A125141CEB9E00086B63 /* camera.png */,
+				A568A126141CEB9E00086B63 /* camera@2x.png */,
+				A568A127141CEB9E00086B63 /* Icon.png */,
+				A568A128141CEB9E00086B63 /* Icon@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A568A0E3141CE0A900086B63 /* ARKitExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A568A102141CE0A900086B63 /* Build configuration list for PBXNativeTarget "ARKitExample" */;
+			buildPhases = (
+				A568A0E0141CE0A900086B63 /* Sources */,
+				A568A0E1141CE0A900086B63 /* Frameworks */,
+				A568A0E2141CE0A900086B63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARKitExample;
+			productName = ARKitExample;
+			productReference = A568A0E4141CE0A900086B63 /* ARKitExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A568A0DB141CE0A700086B63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = rumori;
+			};
+			buildConfigurationList = A568A0DE141CE0A700086B63 /* Build configuration list for PBXProject "ARKitExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A568A0D9141CE0A700086B63;
+			productRefGroup = A568A0E5141CE0A900086B63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A568A0E3141CE0A900086B63 /* ARKitExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A568A0E2141CE0A900086B63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A568A0F3141CE0A900086B63 /* InfoPlist.strings in Resources */,
+				A568A129141CEB9E00086B63 /* camera.png in Resources */,
+				A568A12A141CEB9E00086B63 /* camera@2x.png in Resources */,
+				A568A12B141CEB9E00086B63 /* Icon.png in Resources */,
+				A568A12C141CEB9E00086B63 /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A568A0E0141CE0A900086B63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A568A0F5141CE0A900086B63 /* main.m in Sources */,
+				A568A0F9141CE0A900086B63 /* AppDelegate.m in Sources */,
+				A568A0FC141CE0A900086B63 /* MapViewController.m in Sources */,
+				A568A107141CE2AA00086B63 /* MainViewController.m in Sources */,
+				A568A113141CE35800086B63 /* ARCoordinate.m in Sources */,
+				A568A114141CE35800086B63 /* ARGeoCoordinate.m in Sources */,
+				A568A115141CE35800086B63 /* ARKit.m in Sources */,
+				A568A116141CE35800086B63 /* ARViewController.m in Sources */,
+				A568A117141CE35800086B63 /* AugmentedRealityController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A568A0F1141CE0A900086B63 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A568A0F2141CE0A900086B63 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A568A100141CE0A900086B63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A568A101141CE0A900086B63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A568A103141CE0A900086B63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARKitExample/ARKitExample-Prefix.pch";
+				INFOPLIST_FILE = "ARKitExample/ARKitExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A568A104141CE0A900086B63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARKitExample/ARKitExample-Prefix.pch";
+				INFOPLIST_FILE = "ARKitExample/ARKitExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A568A0DE141CE0A700086B63 /* Build configuration list for PBXProject "ARKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A568A100141CE0A900086B63 /* Debug */,
+				A568A101141CE0A900086B63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A568A102141CE0A900086B63 /* Build configuration list for PBXNativeTarget "ARKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A568A103141CE0A900086B63 /* Debug */,
+				A568A104141CE0A900086B63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A568A0DB141CE0A700086B63 /* Project object */;
+}
